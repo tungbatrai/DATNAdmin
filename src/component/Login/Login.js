@@ -12,7 +12,7 @@ import swal from "sweetalert";
 import { SwalCommon } from "../../constants/SwalCommon";
 import { push } from "connected-react-router";
 const styles = {
-  section: { marginTop: "70px" },
+  section: { marginTop: "70px" ,marginLeft:"-225px"},
   sectionHead: { textAlign: "center" },
   sectionFoot: { textAlign: "center", marginTop: "1rem", fontSize: ".75em" },
   sectionBody: { marginTop: "1rem" },

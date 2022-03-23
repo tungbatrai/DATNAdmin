@@ -301,8 +301,7 @@ export default function AdminOrderPaid() {
                   </div>
                 </div>
                 <div className="row mx-0">
-                  <div className="col-2"></div>
-                  <div className="col-3">
+                  <div className="col-4">
                     <div className="row">
                       <div className="col-3 px-1 font-size11 align-self-center text-center">
                         Product name
@@ -323,7 +322,7 @@ export default function AdminOrderPaid() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-3">
+                  <div className="col-4">
                     <div className="row">
                       <div className="col-3 px-1 font-size11 align-self-center text-center">
                         Brand
@@ -344,7 +343,7 @@ export default function AdminOrderPaid() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-3">
+                  <div className="col-4">
                     <div className="row">
                       <div className="col-3 px-1 font-size11 align-self-center text-center">
                         Category

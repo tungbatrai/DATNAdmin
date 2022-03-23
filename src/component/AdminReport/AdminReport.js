@@ -376,7 +376,7 @@ export default function AdminOrderDetail(props) {
 
           <div className="mt-5 mb-5 d-flex justify-content-center">
             <LineChart
-              width={1500}
+              width={1200}
               height={500}
               data={fdata}
               margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
@@ -386,7 +386,7 @@ export default function AdminOrderDetail(props) {
               <Line type="monotone" dataKey="quantity" stroke="#800000" />
               <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
               <Bar dataKey="number" fill="#8884d8" barSize={30} />
-              <XAxis dataKey="number" />
+              <XAxis dataKey="name" />
               <YAxis />
               <Tooltip />
               <Legend />
@@ -406,7 +406,7 @@ export default function AdminOrderDetail(props) {
             </div>
           </div>
           <div className="mt-5 mb-5 d-flex justify-content-center">
-            <BarChart width={1500} height={500} data={data2}>
+            <BarChart width={1200} height={500} data={data2}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" />
               <YAxis />

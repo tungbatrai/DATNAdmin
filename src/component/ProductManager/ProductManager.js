@@ -101,9 +101,8 @@ export default function ProductManager() {
           <div className="tcol-75 tcol-lg-100">
             <div className="search">
               <div className="tcol-90 d-flex justify-content-center flex-column">
-                <div className="row mx-0">
-                  <div className="col-2"></div>
-                  <div className="col-3">
+                <div className="row m-0 p-0">
+                  <div className="col-4">
                     <div className="row">
                       <div className="col-3 px-1 font-size11 align-self-center text-center">
                         Product
@@ -143,7 +142,7 @@ export default function ProductManager() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-3">
+                  <div className="col-4">
                     <div className="row">
                       <div className="col-3 px-1 font-size11 align-self-center text-center">
                         Category
