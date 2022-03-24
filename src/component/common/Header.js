@@ -47,8 +47,8 @@ function Header() {
           className="sb-topnav navbar navbar-expand navbar-dark bg-dark"
           aria-label=""
         >
-          <Link className="navbar-brand" to="/index.html">
-            TMT
+          <Link className="navbar-brand" to="/">
+            AdminShop
           </Link>
           {!isLogin && (
             <button

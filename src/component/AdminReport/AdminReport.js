@@ -29,7 +29,7 @@ const styles = {
   textAlign: "center",
 };
 
-export default function AdminOrderDetail(props) {
+export default function AdminReport(props) {
   const [isChangePage, setIsChangePage] = useState(false);
   const [data, setData] = useState([]);
 
@@ -133,7 +133,6 @@ export default function AdminOrderDetail(props) {
   function getData() {
     OrdersService.getOrders(dataFill).then((res) => {
       if (res.status === 200) {
-        console.log(res.data);
         setData(res.data);
         var mm1 = 0;
         var mm2 = 0;

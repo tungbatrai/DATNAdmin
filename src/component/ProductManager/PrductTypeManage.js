@@ -40,7 +40,7 @@ export default function ProductManager(props) {
     swal(SwalCommon.ALERT_DELETE_ALL).then((willDelete) => {
       if (willDelete) {
         console.log(id);
-         swal(SwalCommon.COMING_SOON);
+        swal(SwalCommon.COMING_SOON);
         // productService
         //   .deleteProduct(id)
         //   .then((response) => {
@@ -66,7 +66,6 @@ export default function ProductManager(props) {
     seteditItem(index);
     setImage(item.image);
     setValue(`data.${index}.color`, item.color);
-    setValue(`data.${index}.color_code`, item.color_code);
     setValue(`data.${index}.price`, item.price);
     setValue(`data.${index}.quantity`, item.quantity);
     setValue(`data.${index}.type`, item.type);
@@ -154,7 +153,6 @@ export default function ProductManager(props) {
                     <th>Quantity</th>
                     <th>Type</th>
                     <th>Color</th>
-                    <th>color code</th>
                     <th>Detail</th>
                     {/* <th>Delete</th> */}
                   </tr>
@@ -284,24 +282,6 @@ export default function ProductManager(props) {
                             </>
                           ) : (
                             <div className="mt-5">{item.color} </div>
-                          )}
-                        </td>
-                        <td style={{ width: "7%" }}>
-                          {editItem == index ? (
-                            <>
-                              <input
-                                className="form-control mt-5 "
-                                defaultValue={item.color_code}
-                                onChange={(e) => {
-                                  setValue(
-                                    `data.${index}.color_code`,
-                                    e.target.value
-                                  );
-                                }}
-                              />
-                            </>
-                          ) : (
-                            <div className="mt-5">{item.color_code} </div>
                           )}
                         </td>
                         <td className="text-center" style={{ width: "10%" }}>

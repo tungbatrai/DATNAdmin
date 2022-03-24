@@ -28,7 +28,6 @@ export default function ProductTypeRegister({ id, show, handleCloseModal }) {
         quantity: getValues(`quantity`),
         color: getValues(`color`),
         type: getValues(`type`),
-        color_code: getValues(`color_code`),
       };
       productService.productTypeCreate(dataSave, id).then((res) => {
         if (res.status === 200) {
@@ -128,18 +127,7 @@ export default function ProductTypeRegister({ id, show, handleCloseModal }) {
                 />
               </div>
             </div>
-            <div className="row mt-4">
-              <div className="col-4 mt-2">Color code</div>
-              <div className="col-8">
-                <input
-                  className="form-control txtInput w-100"
-                  {...register(`color_code`, {
-                    required: true,
-                    maxLength: 10,
-                  })}
-                />
-              </div>
-            </div>
+         
 
             <div className="row mt-4">
               <div className="col-4 mt-2">Image</div>
